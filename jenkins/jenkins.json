@@ -21,7 +21,12 @@
         },
         {
             "type": "breakpoint",
-            "note": "Something"
+            "note": "Test Jenkins"
+        },
+        {
+            "type": "file",
+            "source": "test_file",
+            "destination": "/tmp/test_file"
         }
     ]
 }
