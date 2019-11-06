@@ -3,7 +3,7 @@
       "type": "amazon-ebs",
       "region": "us-east-1",
       "instance_type": "m5.large",
-      "ssh_username": "ec2-user",
+      "ssh_username": "local",
       "source_ami": "ami-0b898040803850657",
       "ami_name": "updated-jenkins-ami {{timestamp}}"
     }],
@@ -17,7 +17,7 @@
                 "sudo yum install jenkins -y",
                 "sudo systemctl enable jenkins",
                 "sudo systemctl start jenkins",
-                "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcN1X/GoVedVKBTh7MkljqqlyHef/1Rd78Jvk6/VSGXnG9q33jWr7D71L3sC6tDqr+hYv8k92Dx5hEYbIswrnewoUcx+uoiGnx2h5xR0NE63kQnbpI3MPS2jAA3takfHlWCo0Sev+Q2EjfHRel9UpfpVRAez4ZnY9v8CHz72v67SjZLGA928b7lz8ThEvlFnW+uXr4dP5NzLrAJdPMjBu/ObTYbDUKT5TxAEKgngs1z3qv3Rlq1b/qH8l/Pqg7fB2FxsqysFTyKpQmz94eXjX+pw0tq4Rvww0/LWMzK0xbeIONHcvVE6/V6ltcCFZAH1w9b1Lv+U30xG3RIz39jiC5 root@ip-172-31-24-189' | tee ~/.ssh/authorized_keys"
+                "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDwxx7lnAON+p1B14DqE/BcXwxzWcU3GU1VRRIkpuZYIpBcolR2v3nabfNwkJhwTUmSkSwPSswkhNTtJOFJaOBuJoFy2aF1/pvZgEq7Fr5xbLeE1du6zksneXgCMU7KJF1MU54m2k4JtJnbI+PO1j6vXlCop3+bWFQycNQVdxkg0x9lgHl+N8ZjCcuDQqjnaLrMWTMFGbMFqok6uNCnjctdo+42YLUrr1+GOt6q8SfZ4q5dD2C+MKEvi4JIMzHwbnBvGROOWJxR7qua2DqJGlNk169TCQOuzLG0fV+EX2nd35fZnBAMhnftS0WvsCbMLUmYov+OTNcvZ3aixMMGtTR root@ip-172-31-13-14.us-west-1.compute.internal' | tee ~/.ssh/authorized_keys"
             ]
         },
         {
